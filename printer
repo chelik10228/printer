@@ -1,0 +1,21 @@
+#!/usr/bin/python
+
+import time;
+
+print("Welcome to Printer!");
+while (True):
+	com = input("printer => ");
+	if com == "print":
+		print_text = input("Type any text for print: ");
+		print("Scanning");
+		time.sleep(2);
+		def print_chars(msg, t):
+			for i in msg:
+				print(end=i, flush=True);
+				time.sleep(t);
+		print_chars(print_text, 0.1);
+		print("\n");
+	elif com == "exit":
+		exit();
+	else:
+		print("Unknown Command.");
