@@ -4,7 +4,7 @@ import time;
 
 print("Welcome to Printer!");
 while (True):
-	com = input("printer => ");
+	com = input("\033[32mprinter\033[0m => ");
 	if com == "print":
 		print_text = input("Type any text for print: ");
 		print("Scanning");
@@ -18,4 +18,4 @@ while (True):
 	elif com == "exit":
 		exit();
 	else:
-		print("Unknown Command.");
+		print("\033[31mUnknown Command.\033[0m");
